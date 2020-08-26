@@ -12,11 +12,16 @@ Log file entry example (Timestamp and core temperature (Celsius)):
 
 ## Usage:
 
+Running the script
 ```sh
 sh ./tempmon.sh
+```
+
+Example crontab to run this script every 15min:
+```sh
+*/15 * * * * sh /home/$USER/tempmon.sh >/dev/null 2>&1
 ```
 
 ## Features to add
 - [ ] Custom directory
 - [ ] Custom log file name
-- [ ] Add example to use in cron
